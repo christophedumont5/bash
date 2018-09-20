@@ -30,7 +30,7 @@ define service {
 ```
 Machine à monitorer :  
 
-Copier le fichier mem.sh sous /usr/lib64/nagios/plugins
+Copier le fichier plugin_nagios_mem sous /usr/lib64/nagios/plugins et le renommer mem.sh
 
 Fixer les droits sur le fichier 
 ```
