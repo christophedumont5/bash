@@ -2,10 +2,11 @@
 
 Des scripts bash pour utilisations diverses et variées 
 
-## Pré-requis 
+## Pré-requis pour PLUGIN-NAGIOS
 
-Il faut installer la librairie bc sur la machine à monitorer, ainsi que le plugin nrpe. 
- ```
+Installer la librairie bc sur la machine à monitorer, ainsi que le plugin nrpe. 
+
+```
 sudo yum install bc
 sudo yum install nrpe nagios-plugins-users nagios-plugins-load nagios-plugins-swap nagios-plugins-disk nagios-plugins-procs
 
@@ -15,7 +16,7 @@ sudo apt-get install nrpe nagios-plugins-users nagios-plugins-load nagios-plugin
 
 ## Installation
 
-Côté serveur, créer un service comme suit : 
+Serveur Nagios : créer un service  
 
 ```
 define service {
@@ -31,7 +32,7 @@ define service {
         }
 ```
 
-Côté client, 
+Machine à monitorer :  
 
 Copier le fichier mem.sh sous /usr/lib64/nagios/plugins
 Fixer les droits sur le fichier 
