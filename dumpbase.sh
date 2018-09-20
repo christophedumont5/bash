@@ -15,8 +15,8 @@ Archive=glpi-gyoni_$(date +%G%m%d).tar.gz
 Backupdir="/Sauvegardes"
 Errorlog="/var/log/dumps/error.log"
 Customlog="/var/log/dumps/dump.log"
-Destinataire="support.rfi@yoni.fr"
-Expediteur="dumpbase@glpi.groupeyoni.fr"
+Destinataire="######"
+Expediteur="######"
 
 #fonction dump+compression
 
