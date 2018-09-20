@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ram_tot=$(echo $(free -m | grep Mem: | awk -F " " '{print $2}'))
+ram_util=$(echo $(free -m | grep Mem: | awk -F " " '{print $3}'))
+taux_ram=$(echo "100 / $ram_tot * $ram_util" | bc -l | cut -c1-7)
+
+case $taux_ram in
+[1-80]*)
+echo "MEMOIRE OK - $taux_ram% de mémoire utilisée"
+exit 0
+;;
+[80-89]*)
+echo "MEMOIRE WARNING - $taux_ram% de mémoire utilisée"
+exit 1
+;;
+[90-100]*)
+echo "MEMOIRE CRITICAL - $taux_ram% de mémoire utilisée"
+exit 2
+;;
+*)
+echo "MEMOIRE UNKNOWN"
+exit 3
+;;
+esac
