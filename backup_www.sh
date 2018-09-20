@@ -4,8 +4,8 @@ wwwdirs=(/var/www/html/)
 date=`date +%Y-%m-%d`
 Errorlog="/var/log/back_www_error.log"
 Customlog="/var/log/back_www.log"
-Destinataire="support.rfi@yoni.fr"
-Expediteur="backup_www@glpi.groupeyoni.fr"
+Destinataire="###@###"
+Expediteur="###@###"
 
 backup() {
 
