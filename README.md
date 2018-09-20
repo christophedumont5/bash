@@ -31,6 +31,7 @@ define service {
 Machine à monitorer :  
 
 Copier le fichier mem.sh sous /usr/lib64/nagios/plugins
+
 Fixer les droits sur le fichier 
 ```
 chmod 755 mem.sh
