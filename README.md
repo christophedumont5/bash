@@ -1,6 +1,6 @@
 # Scripts Bash
 
-Des scripts bash pour utilisations diverses et variées (dump base mysql, plugin nagios, ...)
+Des scripts bash pour utilisations diverses et variées 
 
 ## Auteur
 
