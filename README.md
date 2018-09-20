@@ -2,7 +2,7 @@
 
 Des scripts bash pour utilisations diverses et variées 
 
-## Pré-requis pour PLUGIN-NAGIOS
+## Pré-requis pour plugin_nagios_mem
 
 Installer la librairie bc sur la machine à monitorer, ainsi que le plugin nrpe. 
 ```
