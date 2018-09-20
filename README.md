@@ -6,8 +6,8 @@ Des scripts bash pour utilisations diverses et variées
 
 Il faut installer la librairie bc sur la machine à monitorer, ainsi que le plugin nrpe. 
 
-# sudo yum install bc
-# sudo yum install nrpe nagios-plugins-users nagios-plugins-load nagios-plugins-swap nagios-plugins-disk nagios-plugins-procs
+## sudo yum install bc
+## sudo yum install nrpe nagios-plugins-users nagios-plugins-load nagios-plugins-swap nagios-plugins-disk nagios-plugins-procs
 
 # sudo apt-get install bc
 # sudo apt-get install nrpe nagios-plugins-users nagios-plugins-load nagios-plugins-swap nagios-plugins-disk nagios-plugins-procs
