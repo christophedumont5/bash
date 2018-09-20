@@ -1,7 +1,7 @@
 # Scripts Bash
 
-Des scripts bash pour différentes utilisation (dump base mysql, plugin nagios, ...)
+Des scripts bash pour utilisations diverses et variées (dump base mysql, plugin nagios, ...)
 
-## Authors
+## Auteur
 
 * **Christophe Dumont** 
