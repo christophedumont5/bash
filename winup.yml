@@ -36,4 +36,5 @@ ansible -m win_command -a "ipconfig" -u administrateur --ask-pass hv1 -vv
 
 DEFINIR LES FONCTIONNALITES
 
-MAJ de serveurs Windows / Linux de l'ensemble du groupe
+1. Gestion des MAJ de l'ensemble des serveurs du groupe (Win / CentOS)
+2. Durcissement de l'ensemble des serveurs du groupe (Win / CentOS)
