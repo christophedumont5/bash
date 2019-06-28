@@ -1,0 +1,39 @@
+COTE SERVEUR WINDOWS
+
+Autoriser l'exécution de script powershell : 
+
+Get-ExecutionPolicy
+Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Restricted
+
+Exécuter le script ConfigureRemotingForAnsible.ps1
+
+COTE ANSIBLE 
+
+ajout /etc/ansible/hosts
+
+[windows]
+hv1
+
+ajout du serveur au fichier /etc/hosts
+172.16.238.19   hv1
+
+modifier le fichier /etc/ansible/group_vars/windows.yml
+
+ansible_become: false
+ansible_user: ########
+ansible_password: ########
+ansible_port: 5986
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+#ansible_winrm_transport: credssp
+validate_certs: false
+
+TESTER LA CONNEXION
+
+ansible -m win_ping -u administrateur hv1 -vv
+ansible -m win_command -a "ipconfig" -u administrateur --ask-pass hv1 -vv
+
+DEFINIR LES FONCTIONNALITES
+
+MAJ de serveurs Windows / Linux de l'ensemble du groupe
